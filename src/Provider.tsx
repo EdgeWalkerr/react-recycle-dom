@@ -8,7 +8,7 @@ function reducer(state: any, action: any) {
 		case 'mount': {
 			const { name, id, props, ref } = action;
 			// 查看是否有闲置的相同的item, 如果有，将visible 设置为true
-			const index = state[name].instanceList.findIndex(({ visible }: { visible: boolean }) => !visible);
+			const index = state[name].instanceList.findIndex(({ id: originId }: { id: string }) => id === originId);
 			if (index !== -1) {
 				state[name] = {
 					...state[name],
@@ -16,7 +16,6 @@ function reducer(state: any, action: any) {
 				}
 				state[name].instanceList[index] = {
 					...state[name].instanceList[index],
-					id,
 					visible: true,
 				}
 				return {
