@@ -1,0 +1,21 @@
+{
+  "name": "react-recycle-dom",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/EdgeWalkerr/react-recycle-dom.git",
+  "author": "shenxiang.feng <shenxiang.feng@binance.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -w"
+  },
+  "dependencies": {
+    "0i0": "0.0.11",
+    "react": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.52",
+    "@types/react-dom": "^16.9.8",
+    "@types/uuid": "^8.3.0",
+    "typescript": "^4.0.3"
+  }
+}

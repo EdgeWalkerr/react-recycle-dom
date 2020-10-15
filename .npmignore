@@ -1,0 +1,6 @@
+example/**
+src/**
+test/**
+tsconfig.json
+yarn.lock
+yarn-error.log
