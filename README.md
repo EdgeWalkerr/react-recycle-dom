@@ -46,3 +46,7 @@ yarn start
 
 ## todo
 
+- [ ] type
+- [ ] demo
+- [ ] test
+- [ ] ci cd
